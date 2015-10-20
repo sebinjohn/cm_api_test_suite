@@ -1,5 +1,12 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 script:
-  - python setup.py sdist
+- python setup.py sdist
+deploy:
+  provider: releases
+  api_key:
+    secure: HTe/8rIuVB3eK/LJQSsS8kBnWDdusvEPUsfR/K9+CoDwO6+nAOSC+rw2AlC9v6wMte/9bX28Kt4RbdnjSzdWj04G7yWKH9REQbMLQaC9OMqwfTPce7OVB38fUDENIamtRjpJukweXjpJSdMSUIgYCJyrbh4rpn9mlewihK1gBwSb91bh0WSG5JZy8ehTVvSZDevvPWiyf/SqMCliH9G8OEPzGCPDI24AVRWyKnXBhiulb+8wfTSVr4CXlFSu6HKVRzrsKvDlJkcXDODkfkLTLFKf11GEUxozuHQYoLXyjQ7YJ2y4sH5Y9H+sx7jpKdKeb0FDsRwEcclyJ7hR3eSoxI0s2AjQ+YmG/V28g5GYkf+nQH74rDTozxfjszbugA/CvpO+Ncrbgua13Zd9w0PZj8ZHvTqo7Ai1HZAShSHbMrKgGDrAemPSOYt1+Lv6NWXaejXCd12XJ5761K81WTd1Sc7dmamCilpQWyRpG89y4y3IFsuXHxr+swiqLjEsItPMpfCcls+6BdeBuwIfmD2pdQw9sGZVQClY5NB4X9v/3CPeQ2CXrnmoy7GRkBcmw1aPdgl1ZPnQ7pto0ocke5C/aY0Uzwed5hFa0dZ5TzfgxeEolNF2nbBxrGZDVvbZjT3gZZtI6YqzoFiLwhlkzP2HB6GQyZkPZSEgc6kVbMQ4puA=
+  file: dist/cm_api_test_suite-0.1.tar.gz
+  on:
+    repo: sebinjohn/cm_api_test_suite
