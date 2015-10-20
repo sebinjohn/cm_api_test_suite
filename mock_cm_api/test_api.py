@@ -25,7 +25,7 @@ class TestApiResource(object):
             return None
 
     def get_all_clusters(self):
-        return ['test-cluster']
+        return self.clusters.values()
 
     def get_cluster(self, cluster_name):
         if not self.clusters.has_key(cluster_name):

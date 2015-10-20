@@ -23,5 +23,5 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords='cloudera cm_api test suit',
-    packages=['cm_api_test_suite']
+    packages=['mock_cm_api']
 )

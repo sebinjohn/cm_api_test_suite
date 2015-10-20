@@ -13,6 +13,9 @@ class TestApiCluster(object):
             'Impala'
         ]
 
+    def get_cluster_name(self):
+        return self.cluster_name
+
     def get_all_services(self):
         return self.services.keys()
 
