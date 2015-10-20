@@ -1,6 +1,5 @@
 # from test_role import TestApiRole
 class TestApiService(object):
-
     def __init__(self, service_name):
         self.service_name = service_name
 

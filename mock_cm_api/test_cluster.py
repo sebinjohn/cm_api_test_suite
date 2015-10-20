@@ -12,7 +12,6 @@ class TestApiCluster(object):
             'Oozie',
             'Impala'
         ]
-
     def get_cluster_name(self):
         return self.cluster_name
 
@@ -27,6 +26,7 @@ class TestApiCluster(object):
             raise Exception('Not a supported service')
         try:
             service = TestApiService(service_name)
+            service.name = service_name
             self.services[service_name] = service
             return service
         except Exception as e:
